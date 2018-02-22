@@ -1,0 +1,5 @@
+'/producto', 'application.controllers.producto.index.Index',
+'/producto/view/(.+)', 'application.controllers.producto.view.View',
+'/producto/edit/(.+)', 'application.controllers.producto.edit.Edit',
+'/producto/delete/(.+)', 'application.controllers.producto.delete.Delete',
+'/producto/insert', 'application.controllers.producto.insert.Insert',

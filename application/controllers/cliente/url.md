@@ -1,0 +1,5 @@
+'/cliente', 'application.controllers.cliente.index.Index',
+'/cliente/view/(.+)', 'application.controllers.cliente.view.View',
+'/cliente/edit/(.+)', 'application.controllers.cliente.edit.Edit',
+'/cliente/delete/(.+)', 'application.controllers.cliente.delete.Delete',
+'/cliente/insert', 'application.controllers.cliente.insert.Insert',

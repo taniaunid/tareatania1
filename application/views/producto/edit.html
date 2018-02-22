@@ -1,0 +1,28 @@
+$def with(producto, message)
+<h3>
+    <a href="/producto">producto</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_producto" id="id_producto" value="$producto.id_producto" />
+
+    <div class="form-group">
+    <label for="nombre">nombre</label>
+    <input required id="nombre" type="text" class="form-control" name="nombre" size="30" value="$producto.nombre"/>
+</div><div class="form-group">
+    <label for="precio">precio</label>
+    <input required id="precio" type="text" class="form-control" name="precio" size="30" value="$producto.precio"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>
